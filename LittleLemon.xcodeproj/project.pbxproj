@@ -29,6 +29,7 @@
 		770A53352B5A393800176269 /* Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A53342B5A393800176269 /* Toggle.swift */; };
 		770A53382B5A8DEE00176269 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A53372B5A8DEE00176269 /* Detail.swift */; };
 		770A533A2B5A900E00176269 /* DishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A53392B5A900D00176269 /* DishView.swift */; };
+		770A533C2B5A9AE500176269 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A533B2B5A9AE500176269 /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		770A53342B5A393800176269 /* Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggle.swift; sourceTree = "<group>"; };
 		770A53372B5A8DEE00176269 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		770A53392B5A900D00176269 /* DishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishView.swift; sourceTree = "<group>"; };
+		770A533B2B5A9AE500176269 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				770A53342B5A393800176269 /* Toggle.swift */,
+				770A533B2B5A9AE500176269 /* Button.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				770A53242B58EA4400176269 /* Main.swift in Sources */,
 				770A53382B5A8DEE00176269 /* Detail.swift in Sources */,
 				770A531E2B58E8BB00176269 /* Menu.swift in Sources */,
+				770A533C2B5A9AE500176269 /* Button.swift in Sources */,
 				770A53262B58EA7B00176269 /* Header.swift in Sources */,
 				770A531C2B58E8AD00176269 /* UserProfile.swift in Sources */,
 				770A532D2B58F05600176269 /* Image+Assets.swift in Sources */,
