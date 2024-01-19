@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct Main: View {
+    let persistence = PersistenceController.shared
+    
     var body: some View {
         VStack {
             Header()
             Menu()
+                .environment(\.managedObjectContext, persistence.container.viewContext)
         }
     }
 }

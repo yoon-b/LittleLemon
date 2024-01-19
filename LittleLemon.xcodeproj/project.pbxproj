@@ -24,6 +24,11 @@
 		770A53282B58ED6900176269 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A53272B58ED6900176269 /* Hero.swift */; };
 		770A532B2B58F04B00176269 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A532A2B58F04B00176269 /* Color+Extensions.swift */; };
 		770A532D2B58F05600176269 /* Image+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A532C2B58F05600176269 /* Image+Assets.swift */; };
+		770A53302B5A31D700176269 /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 770A532F2B5A31D700176269 /* Karla-Regular.ttf */; };
+		770A53322B5A31EA00176269 /* MarkaziText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 770A53312B5A31EA00176269 /* MarkaziText-Medium.ttf */; };
+		770A53352B5A393800176269 /* Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A53342B5A393800176269 /* Toggle.swift */; };
+		770A53382B5A8DEE00176269 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A53372B5A8DEE00176269 /* Detail.swift */; };
+		770A533A2B5A900E00176269 /* DishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A53392B5A900D00176269 /* DishView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +50,12 @@
 		770A53272B58ED6900176269 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		770A532A2B58F04B00176269 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		770A532C2B58F05600176269 /* Image+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Assets.swift"; sourceTree = "<group>"; };
+		770A532F2B5A31D700176269 /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Regular.ttf"; sourceTree = "<group>"; };
+		770A53312B5A31EA00176269 /* MarkaziText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkaziText-Medium.ttf"; sourceTree = "<group>"; };
+		770A53332B5A322300176269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		770A53342B5A393800176269 /* Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggle.swift; sourceTree = "<group>"; };
+		770A53372B5A8DEE00176269 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		770A53392B5A900D00176269 /* DishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +88,9 @@
 		770A52FE2B58CF0D00176269 /* LittleLemon */ = {
 			isa = PBXGroup;
 			children = (
+				770A53362B5A8D1700176269 /* UI */,
+				770A53332B5A322300176269 /* Info.plist */,
+				770A532E2B5A318D00176269 /* Fonts */,
 				770A53292B58F02600176269 /* Extensions */,
 				770A530F2B58E70100176269 /* CoreData */,
 				770A530E2B58E6F000176269 /* Model */,
@@ -106,6 +120,8 @@
 				770A53232B58EA4400176269 /* Main.swift */,
 				770A53252B58EA7B00176269 /* Header.swift */,
 				770A53272B58ED6900176269 /* Hero.swift */,
+				770A53372B5A8DEE00176269 /* Detail.swift */,
+				770A53392B5A900D00176269 /* DishView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +152,23 @@
 				770A532C2B58F05600176269 /* Image+Assets.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		770A532E2B5A318D00176269 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				770A53312B5A31EA00176269 /* MarkaziText-Medium.ttf */,
+				770A532F2B5A31D700176269 /* Karla-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		770A53362B5A8D1700176269 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				770A53342B5A393800176269 /* Toggle.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,8 +229,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770A53322B5A31EA00176269 /* MarkaziText-Medium.ttf in Resources */,
 				770A53072B58CF1000176269 /* Preview Assets.xcassets in Resources */,
 				770A53042B58CF1000176269 /* Assets.xcassets in Resources */,
+				770A53302B5A31D700176269 /* Karla-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +246,7 @@
 				770A53182B58E7F300176269 /* Onboarding.swift in Sources */,
 				770A53162B58E74700176269 /* ExampleDatabase.xcdatamodeld in Sources */,
 				770A53242B58EA4400176269 /* Main.swift in Sources */,
+				770A53382B5A8DEE00176269 /* Detail.swift in Sources */,
 				770A531E2B58E8BB00176269 /* Menu.swift in Sources */,
 				770A53262B58EA7B00176269 /* Header.swift in Sources */,
 				770A531C2B58E8AD00176269 /* UserProfile.swift in Sources */,
@@ -219,7 +255,9 @@
 				770A53002B58CF0D00176269 /* LittleLemonApp.swift in Sources */,
 				770A531A2B58E88200176269 /* Home.swift in Sources */,
 				770A53202B58E8D100176269 /* MenuList.swift in Sources */,
+				770A53352B5A393800176269 /* Toggle.swift in Sources */,
 				770A53122B58E71700176269 /* FetchedObjects.swift in Sources */,
+				770A533A2B5A900E00176269 /* DishView.swift in Sources */,
 				770A532B2B58F04B00176269 /* Color+Extensions.swift in Sources */,
 				770A53282B58ED6900176269 /* Hero.swift in Sources */,
 				770A53222B58E8D900176269 /* MenuItem.swift in Sources */,
@@ -358,6 +396,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"LittleLemon/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LittleLemon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -386,6 +425,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"LittleLemon/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LittleLemon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
