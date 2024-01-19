@@ -10,12 +10,15 @@ import SwiftUI
 struct Menu: View {
     @Environment(\.managedObjectContext) private var viewContext
     
+    @State var isLoaded = false
+    
     @State var searchText = ""
     
     @State var startersIsEnabled = true
     @State var mainsIsEnabled = true
     @State var dessertsIsEnabled = true
     @State var drinksIsEnabled = true
+    
     
     private func getMenuData() -> Void {
         PersistenceController.shared.clear()
@@ -112,7 +115,10 @@ struct Menu: View {
             }
         }
         .onAppear() {
-            getMenuData()
+            if !isLoaded {
+                getMenuData()
+                isLoaded = true
+            }
         }
     }
 }
