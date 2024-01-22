@@ -38,6 +38,7 @@ struct CheckboxToggleStyle: ToggleStyle {
                     .foregroundColor(.primaryColor1)
                 configuration.label
             }
+            .padding(.bottom)
         }
         .buttonStyle(PlainButtonStyle())
     }

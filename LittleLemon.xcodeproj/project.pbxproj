@@ -30,6 +30,7 @@
 		770A53382B5A8DEE00176269 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A53372B5A8DEE00176269 /* Detail.swift */; };
 		770A533A2B5A900E00176269 /* DishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A53392B5A900D00176269 /* DishView.swift */; };
 		770A533C2B5A9AE500176269 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A533B2B5A9AE500176269 /* Button.swift */; };
+		770A533F2B5E44EB00176269 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A533E2B5E44EB00176269 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		770A53372B5A8DEE00176269 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		770A53392B5A900D00176269 /* DishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishView.swift; sourceTree = "<group>"; };
 		770A533B2B5A9AE500176269 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		770A533E2B5E44EB00176269 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		770A52FE2B58CF0D00176269 /* LittleLemon */ = {
 			isa = PBXGroup;
 			children = (
+				770A533D2B5E40BD00176269 /* ViewModel */,
 				770A53362B5A8D1700176269 /* UI */,
 				770A53332B5A322300176269 /* Info.plist */,
 				770A532E2B5A318D00176269 /* Fonts */,
@@ -172,6 +175,14 @@
 				770A533B2B5A9AE500176269 /* Button.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		770A533D2B5E40BD00176269 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				770A533E2B5E44EB00176269 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 				770A53002B58CF0D00176269 /* LittleLemonApp.swift in Sources */,
 				770A531A2B58E88200176269 /* Home.swift in Sources */,
 				770A53202B58E8D100176269 /* MenuList.swift in Sources */,
+				770A533F2B5E44EB00176269 /* UserViewModel.swift in Sources */,
 				770A53352B5A393800176269 /* Toggle.swift in Sources */,
 				770A53122B58E71700176269 /* FetchedObjects.swift in Sources */,
 				770A533A2B5A900E00176269 /* DishView.swift in Sources */,
