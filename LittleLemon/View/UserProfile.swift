@@ -34,7 +34,6 @@ struct UserProfile: View {
     }
     
     var body: some View {
-        
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading) {
                 Text("Personal information")
@@ -132,14 +131,26 @@ struct UserProfile: View {
                 .padding(.vertical)
             }
             .alert(isPresented: $userViewModel.showError, content: {
-                Alert(title: Text("Error"), 
+                Alert(title: Text("Error"),
                       message: Text(userViewModel.errorMessage),
                       dismissButton: .default(Text("OK")))
             })
+            .padding(.top)
         }
         .onAppear {
             resetUserInfo()
         }
+        .navigationBarItems(leading:
+                                HStack {
+            Spacer()
+            Image(Asset.logo)
+            Spacer()
+            Image(Asset.profile)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxHeight: 50)
+                .clipShape(Circle())
+        })
     }
 }
 

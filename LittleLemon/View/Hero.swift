@@ -35,7 +35,7 @@ struct Hero: View {
             Image(Asset.hero)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(maxWidth: 120, maxHeight: 140)
+                .frame(maxWidth: 120, maxHeight: 120)
                 .clipShape(Rectangle())
                 .cornerRadius(16)
         }

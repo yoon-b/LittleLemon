@@ -11,6 +11,7 @@ enum Asset: String {
     case logo = "logo"
     case hero = "hero"
     case profile = "profile"
+    case van = "delivery-van"
 }
 
 extension Image {

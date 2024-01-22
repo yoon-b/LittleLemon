@@ -10,6 +10,8 @@ import SwiftUI
 struct Header: View {
     var body: some View {
         HStack {
+            Spacer()
+            
             Image(Asset.logo)
             
             Spacer()
