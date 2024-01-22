@@ -27,3 +27,19 @@ struct CategoryToggleStyle: ToggleStyle {
     }
 }
 
+struct CheckboxToggleStyle: ToggleStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        Button {
+            configuration.isOn.toggle()
+        } label: {
+            HStack {
+                Image(systemName: configuration.isOn ? "checkmark.square.fill" : "square")
+                    .imageScale(.large)
+                    .foregroundColor(.primaryColor1)
+                configuration.label
+            }
+        }
+        .buttonStyle(PlainButtonStyle())
+    }
+}
+
