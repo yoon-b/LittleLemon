@@ -11,6 +11,9 @@ struct Header: View {
     var body: some View {
         HStack {
             Image(Asset.logo)
+            
+            Spacer()
+            
             NavigationLink(destination: UserProfile()) {
                 Image(Asset.profile)
                     .resizable()
