@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Header: View {
+    @State var isLoggedIn = false
+    
     var body: some View {
         HStack {
             Spacer()
@@ -16,17 +18,26 @@ struct Header: View {
             
             Spacer()
             
-            NavigationLink(destination: UserProfile()) {
-                Image(Asset.profile)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(maxHeight: 50)
-                    .clipShape(Circle())
-                    .padding(.trailing)
+            if isLoggedIn {
+                NavigationLink(destination: UserProfile()) {
+                    Image(Asset.profile)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(maxHeight: 50)
+                        .clipShape(Circle())
+                        .padding(.trailing)
+                }
             }
         }
         .frame(maxHeight: 60)
-        .padding(.bottom)
+//        .padding(.bottom)
+        .onAppear() {
+            if UserDefaults.standard.bool(forKey: kIsLoggedIn) {
+                isLoggedIn = true
+            } else {
+                isLoggedIn = false
+            }
+        }
     }
 }
 

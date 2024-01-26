@@ -10,14 +10,15 @@ import SwiftUI
 struct Menu: View {
     @Environment(\.managedObjectContext) private var viewContext
     
-    @State var isLoaded = false
+    @State private var isLoaded = false
     
-    @State var searchText = ""
+    @State private var searchText = ""
+    @State private var isEditing = false
     
-    @State var startersIsEnabled = true
-    @State var mainsIsEnabled = true
-    @State var dessertsIsEnabled = true
-    @State var drinksIsEnabled = true
+    @State private var startersIsEnabled = true
+    @State private var mainsIsEnabled = true
+    @State private var dessertsIsEnabled = true
+    @State private var drinksIsEnabled = true
     
     
     private func getMenuData() -> Void {
@@ -76,10 +77,40 @@ struct Menu: View {
         VStack {
             VStack {
                 Hero()
-                //                .frame(maxHeight: 170)
                 
-                TextField("Search menu", text: $searchText)
-                    .textFieldStyle(.roundedBorder)
+                if !isEditing {
+                    HStack {
+                        Image(systemName: "magnifyingglass")
+                            .imageScale(.large)
+                            .foregroundColor(.highlightColor1)
+                            .padding(.leading)
+                            .onTapGesture {
+                                withAnimation {
+                                    isEditing = true
+                                }
+                            }
+                        Spacer()
+                    }
+                } else {
+                    HStack {
+                        TextField("Search menu", text: $searchText, onEditingChanged: { editing in
+                            isEditing = editing
+                        })
+                        .textFieldStyle(.roundedBorder)
+                        
+                        Image(systemName: "xmark.circle.fill")
+                            .foregroundColor(.highlightColor1)
+                            .onTapGesture {
+                                withAnimation {
+                                    isEditing = false
+                                    searchText = ""
+                                }
+                            }
+                    }
+                    
+                }
+                
+                
             }
             .padding()
             .background(Color.primaryColor1)
